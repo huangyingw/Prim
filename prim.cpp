@@ -45,9 +45,7 @@ int CreatMGraph_L(MGraph_L &G,int* data,int dim)//创建图用邻接矩阵表示
   for(int i=0;i<dim;i++)
   {
     for(int j=0;j<G.vexNum;++j)
-    {
       G.adjMatrix[i][j].weight=MAXNUM;
-    }
 
     //_itoa_s( i, &G.vexs[i],8,10);
     snprintf(&G.vexs[i],sizeof(&G.vexs[i]),"%d",i);
